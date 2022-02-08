@@ -10,4 +10,6 @@ class Book(me.Document):
     isbn = me.StringField()
     # example bbk 32.973 / 84P7 / 84(2Рус+Рус)6-44
     bbk = me.StringField()
-    
+    meta = {
+        'collection': 'book',
+    }
